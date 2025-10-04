@@ -1,0 +1,284 @@
+/* Style */
+
+/* Container */
+.container {
+  background-color: #c2c5c7;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.nav {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1.5px solid black;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchButton {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchButton input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.searchButton button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.searchButton button:hover {
+  background-color: #0056b3;
+}
+
+.title h2 {
+  margin: 5px 0 5px 0;
+}
+.title p {
+  margin: 5px 0 0 0;
+  text-align: justify;
+}
+
+/* Media Queries untuk Mobile */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title p {
+    text-align: center;
+  }
+
+  .searchButton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .searchButton input {
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .searchButton button {
+    flex-shrink: 0;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .nav {
+    padding: 15px;
+  }
+
+  .searchButton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .searchButton input {
+    width: 100%;
+    max-width: none;
+  }
+
+  .searchButton button {
+    width: 40%;
+    padding: 12px;
+    margin: 10px 0 0 0;
+  }
+
+  .title h2 {
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+  }
+
+  .title p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+/* Main Info */
+.main {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1.5px solid black;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weatherInfo > * {
+  margin: 10px 0;
+}
+
+#temperature {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f18000;
+}
+
+#weather-description {
+  font-weight: bold;
+}
+
+#weather-icon {
+  font-size: 70px;
+  padding-bottom: 5px;
+  text-align: start;
+  margin: 10px 0;
+  background-color: #db9a0e83;
+  border-radius: 50%;
+}
+
+/* Forecast */
+.forecast {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forecast h3 {
+  margin: 0 0 20px 0;
+}
+
+.forecastCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  gap: 10px;
+}
+
+.forecastCard > * {
+  flex: 1 1 calc(20% - 10px);
+  border-radius: 8px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather-icon-fc {
+  font-size: 40px;
+  padding-bottom: 5px;
+  text-align: start;
+  margin: 0px 0;
+}
+
+/* Weather Details */
+
+#weather-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1.5px solid black;
+  gap: 20px;
+}
+
+.details > * {
+  flex: 1 1 calc(33% - 20px);
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#desc-details {
+  color: #0099f1;
+  font-weight: bold;
+  margin: 0;
+}
+
+#desc-details-uv {
+  color: #f13c00;
+  font-weight: bold;
+  margin: 0;
+}
+
+#icon-details {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+#sunrise {
+  color: #ff6b00;
+}
+
+#sunset {
+  color: #4a90e2;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1.5px solid black;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
