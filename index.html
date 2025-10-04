@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/img/cuaca.png" type="image/x-icon" class="icon" />
   </head>
   <body>
     <div class="container">
       <div class="nav">
         <div class="title">
-          <h2>Weather Dashboard</h2>
+          <h2>☀️ Weather Dashboard</h2>
           <p>Get the latest weather updates for your city</p>
         </div>
         <div class="searchButton">
@@ -21,18 +22,85 @@
       <div class="main">
         <div class="weatherInfo">
           <h3>Current Weather</h3>
-          <p>Temperature: 25°C</p>
-          <p>Condition: Sunny</p>
+          <p id="weather-icon">☀️</p>
+          <p id="temperature">25°C</p>
+          <p id="weather-description">Sunny</p>
         </div>
       </div>
       <div class="forecast">
-        <p>Temperature: 22°C</p>
+        <h3>5 Day Forecast</h3>
+        <div class="forecastCard">
+          <div class="day1">
+            <p>Monday</p>
+            <p id="weather-icon-fc">⛅</p>
+            <p>27°C</p>
+          </div>
+          <div class="day2">
+            <p>Tuesday</p>
+            <p id="weather-icon-fc">🌧️</p>
+            <p>22°C</p>
+          </div>
+          <div class="day3">
+            <p>Wednesday</p>
+            <p id="weather-icon-fc">☀️</p>
+            <p>24°C</p>
+          </div>
+          <div class="day4">
+            <p>Thursday</p>
+            <p id="weather-icon-fc">⛅</p>
+            <p>26°C</p>
+          </div>
+          <div class="day5">
+            <p>Friday</p>
+            <p id="weather-icon-fc">☀️</p>
+            <p>25°C</p>
+          </div>
+        </div>
       </div>
+      <h3 id="weather-details">Weather Details</h3>
       <div class="details">
-        <p>Humidity: 60%</p>
+        <div class="wind">
+          <p id="icon-details">💨</p>
+          <p>Wind</p>
+          <p id="desc-details">12 Km/h</p>
+          <p>North East</p>
+        </div>
+        <div class="humidity">
+          <p id="icon-details">💧</p>
+          <p>Humidity</p>
+          <p id="desc-details">65%</p>
+          <p>Moderate</p>
+        </div>
+        <div class="pressure">
+          <p id="icon-details">🌡️</p>
+          <p>Pressure</p>
+          <p id="desc-details">1013 hPa</p>
+          <p>Normal</p>
+        </div>
+        <div class="visibility">
+          <p id="icon-details">👁️</p>
+          <p>Visibility</p>
+          <p id="desc-details">10 km</p>
+          <p>Good</p>
+        </div>
+        <div class="uvIndex">
+          <p id="icon-details">☀️</p>
+          <p>UV Index</p>
+          <p id="desc-details-uv">8</p>
+          <p>High - Use protection</p>
+        </div>
+        <div class="sunTimes">
+          <p id="icon-details">🌅</p>
+          <p>Sun Times</p>
+          <p id="desc-details">
+            <span id="sunrise">06:00 AM</span> /
+            <span id="sunset">06:30 PM</span>
+          </p>
+          <p>Sunrise / Sunset</p>
+        </div>
       </div>
       <div class="footer">
-        <p>&copy; 2024 Weather Dashboard</p>
+        <p>Made with ❤️ for learning HTML & CSS</p>
       </div>
     </div>
   </body>
